@@ -27,7 +27,7 @@
     
     <div  class="form-group col-md-4">
       <label style="color:#FEFAFA" for="inputState">Selecione Produto</label>
-      <select id="inputState" class="form-control" name="nombre">
+      <select id="inputState" class="form-control" name="nombre" required>
         <option selected>Escoger...</option>
           <?php
 
@@ -47,7 +47,7 @@
     
     <div class="col-md-4 mb-3">
       <label style="color:#FEFAFA" for="validationServer02">Cantidad</label>
-      <input type="number" class="form-control" name="cantidad" id="validationServer02" placeholder="" value="" required>
+      <input type="text" class="form-control" name="cantidad" id="validationServer02" placeholder="" value="" required>
       <div class="valid-feedback">
         Looks good!
       </div>

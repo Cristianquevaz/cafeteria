@@ -24,10 +24,11 @@
    
     <div class="col-md-4 mb-3">
       <label style="color:#FEFAFA" for="validationServer02">Nombre del producto </label>
-     <input type="text" class="form-control" name="nombre" id="validationServer02" placeholder="" value="" required>
+     <input type="text" class="form-control" name="nombre" id="validationServer02" placeholder="" value="" pattern="[A-Za-z]+"required>
       <div class="valid-feedback">
         Looks good!
       </div>
+      
     </div>
 
     
@@ -59,13 +60,12 @@
 
     <div  class="form-group col-md-4">
       <label style="color:#FEFAFA" for="inputState">categoria</label>
-      <select id="inputState" class="form-control" name="categoria">
+      <select id="inputState" class="form-control" name="categoria" required>
         <option selected>Escoger...</option>
         <option value="lacteos ">  lacteos </option>
-        <option value="Carnes ">  Carnes </option>
         <option value="Comidas congeladas">  Comidas congeladas </option>
-        <option value="Bebidas no alcohólicas">  Bebidas no alcohólicas </option>
-        <option value="Macro snarcks">  Macro snarcks </option>
+        <option value="Bebidas">  Bebidas</option>
+        <option value="Macro snarcks">  dulces </option>
         <option value="Comidas rapidas">  Comidas rapidas</option>
         
       </select>

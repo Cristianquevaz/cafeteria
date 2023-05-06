@@ -13,14 +13,20 @@ if(isset($_POST['nombre'])){
  $cantidad =$_POST['cantidad'];
  $total = $_POST['total'] ;
  $valor = $cantidad * $total; 
- 
+ $num = 0;
  
 }
+if ($cantidad<$num) {
+    echo "<script>alert('numero negativo');</script>";
+    echo "<script>window.location.href = 'index_venta.php';</script>";
+}
+
+
 $sql = "SELECT stock FROM productos WHERE id_producto = $id_producto";
 $resultado = mysqli_query($conexion, $sql);
 $fila = mysqli_fetch_assoc($resultado);
 $stock = $fila['stock'];
-if ($stock < $cantidad){
+if ($stock < $cantidad ){
     echo "<script>alert('no se puede realizar la venta');</script>";
     echo "<script>window.location.href = 'index_venta.php';</script>";
 }else{
@@ -29,7 +35,7 @@ if ($stock < $cantidad){
     $resultado = mysqli_query($conexion,$insertar);
 }
 
-$actualizar = "UPDATE productos SET stock = stock-$cantidad WHERE id_producto = $id_producto";
+$actualizar = "UPDATE productos SET stock = $stock-$cantidad WHERE id_producto = $id_producto";
 
 
 $resultado = mysqli_query($conexion,$actualizar);
