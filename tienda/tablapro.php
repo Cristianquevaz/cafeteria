@@ -25,15 +25,17 @@
 <?php 
 
 
-echo " <center style='color:#EB235F'> busqueda por nombre </center>";
+echo " <center style='color:#EB235F'> </center>";
 
 
  ?>
 <div ALIGN="center" class="col-md-4 mb-3">
-      <label for="validationServer02">DIGITAR  </label>
+      <label for="validationServer02">  </label>
    <!--  <input  type="text" class="form-control is-invalid" name="ida" id="validationServer02" placeholder="" value="" required>-->
 	  <!--<input href="index_venta.php" type="submit" class="btn btn-warning" name="buscar" value="Vender">-->
 	  <a href="index_venta.php" class="btn btn-warning">Vender produto</a>
+	  <a href="index.php" class="btn btn-primary" role="button"> Registra Producto </a>
+
       <div class="valid-feedback">
         Looks good!
       </div>

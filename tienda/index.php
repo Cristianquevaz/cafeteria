@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<form    action="registra_pro.php" method="post"> 
+<form  onsubmit="return validarFormulario()"  action="registra_pro.php" method="post"> 
     
 <div align="center" style="background-color:#EB235F;height:600px;"  class="container">
 
@@ -86,6 +86,61 @@
   <a href="tablapro.php" class="btn btn-primary" role="button"> Ver productos </a>
   <br>
 </div>
+
+<script>
+function validarFormulario() {
+  var stock = document.getElementById("stock").value;
+  if (cantidad < 0) {
+    alert("La cantidad debe ser mayor o igual a cero");
+    return false; // Evitar que se envíe el formulario
+  }
+  return true; // Permitir que se envíe el formulario
+}
+</script>
+
+<script>
+function validarFormulario() {
+  var peso = document.getElementById("peso").value;
+  if (cantidad < 0) {
+    alert("La cantidad debe ser mayor o igual a cero");
+    return false; // Evitar que se envíe el formulario
+  }
+  return true; // Permitir que se envíe el formulario
+}
+</script>
+
+<script>
+function validarFormulario() {
+  var precio = document.getElementById("precio").value;
+  if (cantidad < 0) {
+    alert("La cantidad debe ser mayor o igual a cero");
+    return false; // Evitar que se envíe el formulario
+  }
+  return true; // Permitir que se envíe el formulario
+}
+</script>
+<script>
+function validarFormulario() {
+  var referncia = document.getElementById("referencia").value;
+  if (cantidad < 0) {
+    alert("La cantidad debe ser mayor o igual a cero");
+    return false; // Evitar que se envíe el formulario
+  }
+  return true; // Permitir que se envíe el formulario
+}
+
+</script>
+
+<script>
+function validarFormulario() {
+  var nombre = document.getElementById("nombre").value;
+  if (/\d/.test(nombre)) {
+    alert("El nombre no debe contener números");
+    return false; // Evitar que se envíe el formulario
+  }
+  return true; // Permitir que se envíe el formulario
+}
+</script>
 </form>
 
 

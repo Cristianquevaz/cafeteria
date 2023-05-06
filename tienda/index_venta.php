@@ -78,11 +78,12 @@ echo ' <div class="col-md-4 mb-3">
 ?>
     
 
-    <button type="submit" name="multiply">Multiplicar</button>
+   <!-- <button type="submit" name="multiply">Multiplicar</button>-->
     <br>
    
       <br>
       <input type="submit" class="btn btn-success" name="registrar" id="vender" value="Vender">
+      <a href="tablapro.php" class="btn btn-primary" role="button"> Ver productos </a>
     <?php 
 
     include_once 'conexion.php' ;
@@ -142,9 +143,6 @@ while ($fila = mysqli_fetch_assoc($resultado)) {
 	</tbody>
 </table>
     </div>
- 
-    
-  <a href="tablapro.php" class="btn btn-primary" role="button"> Ver productos </a>
   <br>
 </div>
 </form>
